@@ -18,7 +18,7 @@ const SearchScreen = ({ navigation }) => {
             <Logo />
             <View style={styles.inputContainer}>
                 <RNPickerSelect
-                    placeholder={{ label: 'Selecciona una Región', value: null }}
+                    placeholder={{ label: 'Seleccione una Región', value: null }}
                     onValueChange={(value) => setRegion(value)}
                     items={[
                         { label: 'America', value: 'us' },
@@ -32,7 +32,7 @@ const SearchScreen = ({ navigation }) => {
                 />
             </View>
             <TextInput
-                placeholder="Reino"
+                placeholder="Ingrese un Reino"
                 value={realm}
                 onChangeText={text => setRealm(text)}
                 style={styles.input}
